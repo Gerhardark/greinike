@@ -19,5 +19,5 @@ from django.urls import path
 from greinike import views
 
 urlpatterns = [
-    path("", views.hello),
+    path("", views.inicio),
 ]
