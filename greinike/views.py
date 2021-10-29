@@ -26,11 +26,6 @@ dolar = str(mindicador("dolar", diaActual).InfoApi()['serie'][0]['valor'])
 ipc = str(mindicador("ipc", mesActual).InfoApi()['serie'][0]['valor'])
 uf = str(mindicador("uf", diaActual).InfoApi()['serie'][0]['valor'])
 
-#print(datetime.date(datetime.now()))
-#datetimeobject = datetime.strptime(str(datetime.date(datetime.now())),'%Y-%m-%d')
-#newformat = datetimeobject.strftime('%d-%m-%Y')
-#print(newformat)
-
 def inicio(request):
     return HttpResponse(
         dolar + "</br>" + ipc 
